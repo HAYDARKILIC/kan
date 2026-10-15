@@ -1,0 +1,23 @@
+{
+  "upload_type": "software",
+  "title": "Artifact for: Where the Dimension Hides: Certifying the Approximation Constant of Kolmogorov-Arnold Networks",
+  "description": "Code, run logs and analysis outputs for the manuscript \"Where the Dimension Hides: Certifying the Approximation Constant of Kolmogorov-Arnold Networks\". The repository contains the pre-registered pipeline, the closed-form certification probe, the checkpointed run log of 33,300 fitted cells (manifest digest 4e5b8b0777fa9959), every analysis table in machine-readable form, the vector figures and the machine-generated verdict. An analysis-only path regenerates every reported table, figure and the verdict on a CPU in minutes.",
+  "creators": [
+    {
+      "name": "Kılıç, Haydar",
+      "affiliation": "Ostim Technical University, Ankara, Türkiye",
+      "orcid": "0000-0002-2551-3772"
+    }
+  ],
+  "license": "mit",
+  "access_right": "open",
+  "version": "1.0.0",
+  "keywords": [
+    "Kolmogorov-Arnold networks",
+    "curse of dimensionality",
+    "approximation constant",
+    "B-spline approximation rates",
+    "pre-registered experimental design",
+    "reproducibility artifact"
+  ]
+}
