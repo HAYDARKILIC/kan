@@ -1,0 +1,4 @@
+k,measured_slope,predicted,rel_tol,pass_
+2,-3.108,-3,0.15,True
+3,-4.087,-4,0.15,True
+4,-4.26,-5,0.15,True

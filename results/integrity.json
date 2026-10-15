@@ -1,0 +1,5 @@
+{
+  "closed_form_sizing": "140/140 identical (mismatches=0)",
+  "probe_reproducible": "max|recomputed-logged|=0.00e+00 over 4 cells",
+  "tf32_below_seed_noise": "|fp32-tf32|=2.18e-05 vs seed-std=5.69e-02"
+}

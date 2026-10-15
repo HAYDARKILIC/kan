@@ -1,0 +1,4 @@
+regime,kind,k,n_pts,cN,cN_lo,cN_hi,cE,cE_lo,cE_hi,cN_pred,cE_pred,implied_d_slope,implied_pred,asymptotic_pred,cond,vif_N,vif_E,corr_NE,identifiable
+synthetic,best_spline,2,45,-3.966,-4.137,-3.824,3.976,3.804,4.19,-3,3,3.976,3.0,3,28.4,2.76,2.76,0.798,True
+synthetic,best_spline,3,45,-4.887,-5.218,-4.547,4.896,4.484,5.29,-4,4,4.896,4.0,4,30.4,2.95,2.95,0.813,True
+synthetic,best_spline,4,45,-6.919,-7.35,-6.564,6.934,6.513,7.445,-5,5,6.934,5.0,5,32.3,3.14,3.14,0.826,True

@@ -1,0 +1,41 @@
+Completion run, scale = full, device = cuda
+======================================================================
+
+E4 -- WidthKAN, depth 1, edge count E = m*d:
+  dimensional slope at fixed resolution: test -0.32, train -0.33
+  reference values from the paper and from E1:
+    EdgeKAN (depth 1, E = d)          about  -0.2  (premise satisfied)
+    closed-form oracle                       0.00 to 0.02
+    KANet   (depth 2, E ~ 2d^2)       about  +0.9 test, +0.7 train
+
+  READING: WidthKAN sits between EdgeKAN and KANet. Depth and edge count
+  both appear to contribute; neither alone explains the effect.
+
+  joint fit k=2: c_E +3.904 (pred 3) | c_G -3.168 (pred -3, pass=True)
+  joint fit k=3: c_E +3.505 (pred 4) | c_G -3.041 (pred -4, pass=False)
+  joint fit k=4: c_E +3.091 (pred 5) | c_G -2.743 (pred -5, pass=False)
+
+R -- real data:
+  probe fits admissible for 32 (dataset, probe, order) combinations
+  C5 sign test: trend present in 6/12 dataset-mode cells (paper: 1 of 3 real datasets returned a statistic at all)
+  C6 damage decay: present in 3/12 dataset-mode cells (paper: no real dataset yielded an estimate)
+  The budget grid is now derived from each dataset's own training split, which
+  is what the original fixed grid got wrong.
+
+I -- integrity checks:
+  closed_form_sizing: 18/18 configurations agree with exhaustive search
+  probe_recompute: max |Delta rel_l2| = 0.00e+00 across repeated runs
+  tf32_vs_fp32: discrepancy 1.31e-05 vs between-seed sd 1.12e-02
+  partition_of_unity: max |sum(basis) - 1| = 2.38e-07
+  all pass: True
+
+Scope: E4 and the real-data pipeline were named as gaps in the manuscript and are
+reported as executed after the pre-registered study. None of this revises the
+pre-registered verdict.
+
+======================================================================
+DOWNLOAD THESE BEFORE CLOSING THE SESSION
+======================================================================
+     142,918 B   /content/drive/MyDrive/KAN_JMLR/completion_outputs/E4_widthkan_full.csv
+         303 B   /content/drive/MyDrive/KAN_JMLR/completion_outputs/integrity_recomputed.json
+     160,063 B   /content/drive/MyDrive/KAN_JMLR/completion_outputs/real_full.csv

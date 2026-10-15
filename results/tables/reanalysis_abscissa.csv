@@ -1,0 +1,13 @@
+family,k,n,cE_paper,cE_pass,cG_exact,cG_pass,n_restricted,cG_restricted,cG_r_pass,predicted
+best_spline/additive,2,45,3.976,False,-3.271,True,30,-3.261,True,-3
+best_spline/additive,3,45,4.896,True,-3.815,True,25,-4.274,True,-4
+best_spline/additive,4,45,6.934,False,-5.147,True,20,-4.914,True,-5
+edge_kan/additive,2,45,3.738,True,-3.191,True,30,-2.969,True,-3
+edge_kan/additive,3,45,2.092,False,-1.955,False,25,-0.238,False,-4
+edge_kan/additive,4,45,2.101,False,-1.92,False,20,0.112,False,-5
+kanet/kastruct,2,39,-0.071,False,0.279,False,24,0.231,False,-3
+kanet/kastruct,3,40,-0.137,False,0.336,False,20,0.272,False,-4
+kanet/kastruct,4,42,-0.123,False,0.388,False,17,0.294,False,-5
+kanet/kastruct_np,2,39,-0.273,False,0.382,False,24,0.347,False,-3
+kanet/kastruct_np,3,40,-0.269,False,0.359,False,20,0.344,False,-4
+kanet/kastruct_np,4,42,-0.257,False,0.392,False,17,0.259,False,-5

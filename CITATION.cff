@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the paper it accompanies."
+title: "Artifact for: Where the Dimension Hides: The Approximation Constant of Kolmogorov-Arnold Networks"
+type: software
+authors:
+  - family-names: "Kılıç"
+    given-names: "Haydar"
+    orcid: "https://orcid.org/0000-0002-2551-3772"
+    affiliation: "Faculty of Engineering, Ostim Technical University, Ankara, Türkiye"
+    email: "haydar.kilic@ostimteknik.edu.tr"
+keywords:
+  - Kolmogorov-Arnold networks
+  - curse of dimensionality
+  - approximation constant
+  - pre-registered experimental design
+  - reproducibility artifact
+license: "TODO-choose-a-licence"
+repository-code: "https://github.com/USERNAME/kan-hidden-curse-artifact"   # TODO
+version: "1.0.0"
+date-released: "2026-08-18"

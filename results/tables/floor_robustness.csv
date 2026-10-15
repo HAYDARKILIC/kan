@@ -1,0 +1,4 @@
+k,fp32_floor,fp64_floor,slope_above_floor,slope_mid,slope_incl_floor,predicted,clean_window_spread,window_robust
+2,1.6e-06,4.6e-07,-3.24,-3.24,-2.86,-3,0.0,True
+3,3.1e-07,8.6e-08,-4.45,-4.45,-2.8,-4,0.0,True
+4,2.5e-07,8.9e-08,-6.03,-6.03,-2.38,-5,0.0,True

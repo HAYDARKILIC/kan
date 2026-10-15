@@ -1,0 +1,6 @@
+dataset,d,G,k,spearman_rho,p_value,err_lo,err_hi,signature
+airfoil,5,8,3,1.0,0.0,0.6847,0.8953,present
+concrete,8,8,3,,,,,absent/ambiguous
+energy,8,8,3,,,,,absent/ambiguous
+synthetic(control),5,8,3,1.0,0.0,0.0,0.0,present
+control:dup-edge(SNR test),5,8,3,1.0,0.0,0.0,0.0,edge-count-driven

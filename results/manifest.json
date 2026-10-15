@@ -1,0 +1,134 @@
+{
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "device": "cuda",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "numpy": "2.0.2",
+  "python": "3.12.13",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.35",
+  "amp": "torch.float32",
+  "deterministic": true,
+  "seed": 0,
+  "mode": "full",
+  "config": {
+    "spline_orders": [
+      2,
+      3,
+      4
+    ],
+    "dims": [
+      2,
+      4,
+      8,
+      16,
+      32
+    ],
+    "param_budgets": [
+      2000,
+      4000,
+      8000,
+      16000,
+      32000,
+      64000,
+      128000
+    ],
+    "iso_grids": [
+      4,
+      6,
+      8,
+      12,
+      16,
+      24,
+      32,
+      48,
+      64
+    ],
+    "alpha_grid": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "lr_grid": [
+      0.001,
+      0.003,
+      0.01
+    ],
+    "real_datasets": [
+      "airfoil",
+      "concrete",
+      "energy",
+      "wine",
+      "superconduct"
+    ],
+    "bedrock_grids": [
+      4,
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "n_train": 16000,
+    "n_test": 8000,
+    "epochs": 500,
+    "batch_size": 2048,
+    "lr": 0.003,
+    "weight_decay": 1e-05,
+    "kan_grid_default": 8,
+    "mlp_depth": 2,
+    "use_amp": false,
+    "use_compile": false,
+    "min_fit_points": 4,
+    "n_boot": 2000,
+    "sat_grid": [
+      0.5,
+      0.6,
+      0.7
+    ],
+    "cf_sizing": true,
+    "cache_data": true,
+    "tf32_comparison": true,
+    "cache_cap": 48,
+    "prepass_seed_chunk": 1,
+    "use_vmap_seeds": true,
+    "compile_trained": false
+  },
+  "thresholds": {
+    "bedrock_rate_rel_tol": 0.15,
+    "cN_rel_tol": 0.2,
+    "cE_rel_tol": 0.25,
+    "ka_must_exceed_add": true,
+    "min_seeds_for_sig": 6,
+    "fdr_alpha": 0.05,
+    "converge_mse": 0.05,
+    "sandwich_train_min": 0.95
+  },
+  "n_runs": 33300,
+  "sha256_16": "4e5b8b0777fa9959",
+  "v5_speedups": {
+    "cf_sizing": true,
+    "cache_data": true,
+    "tf32_comparison": true,
+    "use_vmap_seeds": true,
+    "compile_trained": false
+  },
+  "integrity": {
+    "closed_form_sizing": "140/140 identical (mismatches=0)",
+    "probe_reproducible": "max|recomputed-logged|=0.00e+00 over 4 cells",
+    "tf32_below_seed_noise": "|fp32-tf32|=2.18e-05 vs seed-std=5.69e-02"
+  }
+}

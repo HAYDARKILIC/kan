@@ -1,0 +1,13 @@
+# Analysis path (no GPU needed) -- reproduces every table and figure from results/runs_raw.csv
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+matplotlib>=3.7
+torch>=2.0            # used for the closed-form spline probes as well as training
+
+# Notebook
+jupyterlab>=4.0
+ipykernel>=6.0
+
+# Only needed to re-download the UCI datasets for the real-data controls (C5, C6)
+ucimlrepo>=0.0.7

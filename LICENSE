@@ -1,0 +1,15 @@
+PLACEHOLDER — REPLACE BEFORE MAKING THE REPOSITORY PUBLIC
+=========================================================
+
+No licence has been chosen. Without one, default copyright applies and nobody may legally reuse
+the code, which defeats the purpose of releasing it alongside a paper.
+
+For a code-and-data artifact the usual choice is the MIT Licence. GitHub can insert it for you:
+Add file -> Create new file -> name it LICENSE -> "Choose a license template" -> MIT, with
+"Copyright (c) 2026 Haydar Kilic".
+
+Not covered by whatever licence you choose, and not yours to license:
+
+  * The five UCI datasets used by the real-data controls are not committed here; they are
+    downloaded on first use and remain subject to the terms of the UCI Machine Learning
+    Repository and of each individual dataset.

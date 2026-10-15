@@ -1,0 +1,7 @@
+target,k,slope_mean_curve,predicted,abs_err,seed_slope_sd,monotone_frac,n_points
+fixed (paper),2,-3.281,-3,0.281,0.002,0.88,9
+fixed (paper),3,-3.825,-4,0.175,0.002,0.88,9
+fixed (paper),4,-5.046,-5,0.046,0.002,0.88,7
+phase-randomised,2,-3.25,-3,0.25,0.087,1.0,9
+phase-randomised,3,-4.33,-4,0.33,0.136,1.0,9
+phase-randomised,4,-5.164,-5,0.164,0.086,1.0,7

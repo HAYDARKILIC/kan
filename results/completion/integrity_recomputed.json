@@ -1,0 +1,7 @@
+{
+  "closed_form_sizing": "18/18 configurations agree with exhaustive search",
+  "probe_recompute": "max |Delta rel_l2| = 0.00e+00 across repeated runs",
+  "tf32_vs_fp32": "discrepancy 1.31e-05 vs between-seed sd 1.12e-02",
+  "partition_of_unity": "max |sum(basis) - 1| = 2.38e-07",
+  "all_pass": true
+}

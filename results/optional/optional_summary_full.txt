@@ -1,0 +1,37 @@
+Optional strengthening run, scale = full, device = cuda
+======================================================================
+
+D4 -- certification of the two-layer family:
+  alternating     beats AdamW in   0% of cells, mean train gap -0.0631
+  ridge_swept     beats AdamW in   0% of cells, mean train gap -0.7005
+  svd_truncated   beats AdamW in   0% of cells, mean train gap -0.7010
+  warm_start      beats AdamW in  89% of cells, mean train gap +0.0034
+  best scheme: warm_start
+  -> still no scheme dominates AdamW; the limitation stands.
+
+D1 -- definition of an appended edge:
+  dup_exact      predicted positive trend in   0% of datasets
+  dup_jitter     predicted positive trend in   0% of datasets
+  dup_of_noise   predicted positive trend in  17% of datasets
+  dup_permuted   predicted positive trend in  83% of datasets
+  noise          predicted positive trend in 100% of datasets
+  The definition that reproduces the original run is the one to adopt; if none
+  does, the duplicate arm should be dropped from the paper rather than reported.
+
+D2 -- width decoupled from dimension:
+  compare the H-slope against the d-slope in the tables above. If the d-slope
+  persists at fixed H, the effect belongs to dimension; if it vanishes and the
+  H-slope carries it, the effect belongs to width and Section 5.2 can say so.
+
+D3 -- replication subset written; run on a second machine and compare.
+
+Scope: all four are optional strengthenings, run after the pre-registered study.
+None revises the verdict.
+
+======================================================================
+DOWNLOAD BEFORE CLOSING
+======================================================================
+      61,374 B   /content/drive/MyDrive/KAN_JMLR/optional_outputs/D1_duplicate_variants_full.csv
+      30,377 B   /content/drive/MyDrive/KAN_JMLR/optional_outputs/D2_width_decoupled_full.csv
+         468 B   /content/drive/MyDrive/KAN_JMLR/optional_outputs/D3_replication_full.csv
+       3,987 B   /content/drive/MyDrive/KAN_JMLR/optional_outputs/D4_certificate_full.csv

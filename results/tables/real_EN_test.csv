@@ -1,0 +1,7 @@
+dataset,edge_type,d,rho_N_damage,p_value,decay_beta,damage_loN,damage_hiN,EN_signature
+airfoil,noise,5,,,,,,insufficient
+airfoil,dup,5,,,,,,insufficient
+concrete,noise,8,,,,,,insufficient
+concrete,dup,8,,,,,,insufficient
+synthetic(control),noise,5,-1.0,0.0,-1.19,0.0,0.0,present
+synthetic(control),dup,5,-1.0,0.0,-2.75,0.0006,0.0,present

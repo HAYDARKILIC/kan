@@ -1,0 +1,50 @@
+Follow-up experiments, scale = full, device = cuda
+
+E3 -- P2 re-specified against a genuine K-A topology:
+  measured d-slope ranges -0.62 to 1.90
+  gap against the realised benchmark: 6.34 at alpha=0.0, 7.38 at alpha=1.0
+  trend test: rho = 0.258 (p = 0.1079), slope CI [-0.396, 2.403] -> UNSUPPORTED
+  P2 moves from 'untested' to tested. Report as pre-specified in the
+  manuscript but executed after submission of the original study.
+
+E1 -- capacity decoupled from sample size:
+  every cell satisfies params/n_train <= 0.250
+  edge_kan k=2: c_E +3.796 [+3.493,+4.065] (pred 3, pass=False) | c_G -3.124 (pred -3, pass=True)
+  edge_kan k=3: c_E +2.837 [+2.118,+3.621] (pred 4, pass=False) | c_G -2.395 (pred -4, pass=False)
+  edge_kan k=4: c_E +2.446 [+1.577,+3.330] (pred 5, pass=False) | c_G -2.062 (pred -5, pass=False)
+  kanet k=2: c_E -0.057 [-0.326,+0.221] (pred 3, pass=False) | c_G +0.454 (pred -3, pass=False)
+  kanet k=3: c_E -0.173 [-0.436,+0.103] (pred 4, pass=False) | c_G +0.531 (pred -4, pass=False)
+  kanet k=4: c_E -0.125 [-0.481,+0.187] (pred 5, pass=False) | c_G +0.457 (pred -5, pass=False)
+
+  Compare with the paper: in the capacity-confounded regime KANet gave
+  c_E ~ -0.1 and c_G ~ +0.3. If the sign has flipped here, the headline
+  exponent has become measurable and the manuscript's central negative
+  result is superseded -- Sections 4.4, 5.2 and 6 must be rewritten.
+
+E2 -- alternating exact solve (certified ATTAINABLE, not a lower bound):
+  NOTE: comparability requires AdamW to have a fair budget. At scale 'full' it trains for 500 epochs; at 'smoke' this is far too few and the gap below is inflated. Only the 'full' figure is quotable.
+  monotone descent in 81% of cells
+  AdamW above the attainable solution in 16% of cells, mean train gap -0.0210
+  This does NOT extend Proposition 2 to the two-layer family. It shows only
+  whether AdamW leaves a gap against a demonstrably reachable solution.
+
+Scope: none of these results may revise the pre-registered verdict of the
+original study. They extend it. E3 and E1 were named in Section 6.3 before
+being run; E2 is exploratory.
+
+======================================================================
+READ THIS FIRST
+======================================================================
+
+Q1. Does the target harden with dimension?  YES  (MLP d-slope +1.47)
+    If NO: E3 is uninterpretable and the manuscript's P2 (Section 5.3) rests on
+    the same target family, so it needs revisiting. Do not report E3.
+
+Q2. Does decoupling capacity change the two-layer exponent?  UNCHANGED -- capacity was not the confound
+    c_G = +0.481 (paper: about +0.3);  c_E = -0.118 (paper: about -0.1)
+    MEASURABLE -> Sections 4.4, 5.2 and 6 must be rewritten.
+    PARTIAL    -> add a table and a paragraph; the negative result survives.
+    UNCHANGED  -> the negative result is STRENGTHENED; the most obvious
+                  alternative explanation has been eliminated.
+
+Q3. Is the alternating solve sound?  NO -- check the ridge term  (monotone in 81% of cells); AdamW gap -0.0210

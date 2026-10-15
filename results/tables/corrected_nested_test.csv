@@ -1,0 +1,13 @@
+family,k,n,rss_G_only,rss_G_plus_E,F,extra_coef_on_logE
+best_spline/additive,2,45,5.9014,5.8968,0.03,0.01
+best_spline/additive,3,45,29.6157,29.6117,0.01,0.01
+best_spline/additive,4,45,36.2208,36.2111,0.01,0.015
+edge_kan/additive,2,45,8.8705,8.2828,2.98,-0.117
+edge_kan/additive,3,45,41.1544,36.9163,4.82,-0.313
+edge_kan/additive,4,45,51.0889,46.2771,4.37,-0.334
+kanet/kastruct,2,39,58.5465,6.5043,288.04,0.693
+kanet/kastruct,3,40,60.2964,6.232,320.99,0.704
+kanet/kastruct,4,42,64.1937,7.6479,288.35,0.681
+kanet/kastruct_np,2,39,32.1651,4.8417,203.16,0.502
+kanet/kastruct_np,3,40,29.416,5.4324,163.35,0.469
+kanet/kastruct_np,4,42,33.1726,6.1625,170.94,0.471
