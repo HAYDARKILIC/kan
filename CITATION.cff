@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this artifact, please cite the paper it accompanies."
-title: "Artifact for: Where the Dimension Hides: The Approximation Constant of Kolmogorov-Arnold Networks"
+title: "Artifact for: Where the Dimension Hides: Certifying the Approximation Constant of Kolmogorov-Arnold Networks"
 type: software
 authors:
   - family-names: "Kılıç"
@@ -14,7 +14,7 @@ keywords:
   - approximation constant
   - pre-registered experimental design
   - reproducibility artifact
-license: "TODO-choose-a-licence"
-repository-code: "https://github.com/USERNAME/kan-hidden-curse-artifact"   # TODO
+license: MIT
+repository-code: "https://github.com/HAYDARKILIC/kan"
 version: "1.0.0"
-date-released: "2026-08-18"
+date-released: "2026-10-15"
