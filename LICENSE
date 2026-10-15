@@ -1,15 +1,21 @@
-PLACEHOLDER — REPLACE BEFORE MAKING THE REPOSITORY PUBLIC
-=========================================================
+MIT License
 
-No licence has been chosen. Without one, default copyright applies and nobody may legally reuse
-the code, which defeats the purpose of releasing it alongside a paper.
+Copyright (c) 2026 Haydar Kılıç
 
-For a code-and-data artifact the usual choice is the MIT Licence. GitHub can insert it for you:
-Add file -> Create new file -> name it LICENSE -> "Choose a license template" -> MIT, with
-"Copyright (c) 2026 Haydar Kilic".
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Not covered by whatever licence you choose, and not yours to license:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-  * The five UCI datasets used by the real-data controls are not committed here; they are
-    downloaded on first use and remain subject to the terms of the UCI Machine Learning
-    Repository and of each individual dataset.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
